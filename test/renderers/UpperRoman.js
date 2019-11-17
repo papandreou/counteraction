@@ -2,8 +2,8 @@ const UpperRoman = require('../../lib/renderers/UpperRoman');
 const expect = require('unexpected');
 
 describe('UpperRoman', function() {
-  it('should have a name of upper-roman', function() {
-    expect(UpperRoman, 'to have property', 'name', 'upper-roman');
+  it('should have a cssName of upper-roman', function() {
+    expect(UpperRoman, 'to have property', 'cssName', 'upper-roman');
   });
 
   it('should render a small number', function() {

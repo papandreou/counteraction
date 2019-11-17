@@ -2,8 +2,8 @@ const Fixed = require('../../lib/renderers/Fixed');
 const expect = require('unexpected');
 
 describe('Fixed', function() {
-  it('should have a name of fixed', function() {
-    expect(Fixed, 'to have property', 'name', 'fixed');
+  it('should have a cssName of fixed', function() {
+    expect(Fixed, 'to have property', 'cssName', 'fixed');
   });
 
   describe('without an explicit fallback', function() {

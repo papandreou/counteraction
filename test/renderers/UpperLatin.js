@@ -2,8 +2,8 @@ const UpperLatin = require('../../lib/renderers/UpperLatin');
 const expect = require('unexpected');
 
 describe('UpperLatin', function() {
-  it('should have a name of upper-latin', function() {
-    expect(UpperLatin, 'to have property', 'name', 'upper-latin');
+  it('should have a cssName of upper-latin', function() {
+    expect(UpperLatin, 'to have property', 'cssName', 'upper-latin');
   });
 
   it('should render a small number', function() {

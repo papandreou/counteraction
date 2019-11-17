@@ -2,8 +2,8 @@ const Cyclic = require('../../lib/renderers/Cyclic');
 const expect = require('unexpected');
 
 describe('Cyclic', function() {
-  it('should have a name of cyclic', function() {
-    expect(Cyclic, 'to have property', 'name', 'cyclic');
+  it('should have a cssName of cyclic', function() {
+    expect(Cyclic, 'to have property', 'cssName', 'cyclic');
   });
 
   it('should wrap around', function() {

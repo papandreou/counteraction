@@ -2,8 +2,8 @@ const Additive = require('../../lib/renderers/Additive');
 const expect = require('unexpected');
 
 describe('Additive', function() {
-  it('should have a name of additive', function() {
-    expect(Additive, 'to have property', 'name', 'additive');
+  it('should have a cssName of additive', function() {
+    expect(Additive, 'to have property', 'cssName', 'additive');
   });
 
   it('should fall back', function() {

@@ -2,8 +2,8 @@ const LowerRoman = require('../../lib/renderers/LowerRoman');
 const expect = require('unexpected');
 
 describe('LowerRoman', function() {
-  it('should have a name of lower-roman', function() {
-    expect(LowerRoman, 'to have property', 'name', 'lower-roman');
+  it('should have a cssName of lower-roman', function() {
+    expect(LowerRoman, 'to have property', 'cssName', 'lower-roman');
   });
 
   it('should render a small number', function() {

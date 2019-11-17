@@ -2,8 +2,8 @@ const LowerLatin = require('../../lib/renderers/LowerLatin');
 const expect = require('unexpected');
 
 describe('LowerLatin', function() {
-  it('should have a name of lower-latin', function() {
-    expect(LowerLatin, 'to have property', 'name', 'lower-latin');
+  it('should have a cssName of lower-latin', function() {
+    expect(LowerLatin, 'to have property', 'cssName', 'lower-latin');
   });
 
   it('should render a small number', function() {

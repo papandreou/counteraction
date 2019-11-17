@@ -2,8 +2,8 @@ const Hebrew = require('../../lib/renderers/Hebrew');
 const expect = require('unexpected');
 
 describe('Hebrew', function() {
-  it('should have a name of hebrew', function() {
-    expect(Hebrew, 'to have property', 'name', 'hebrew');
+  it('should have a cssName of hebrew', function() {
+    expect(Hebrew, 'to have property', 'cssName', 'hebrew');
   });
 
   it('should render a small number', function() {

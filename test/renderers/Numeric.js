@@ -2,8 +2,8 @@ const Numeric = require('../../lib/renderers/Numeric');
 const expect = require('unexpected');
 
 describe('Numeric', function() {
-  it('should have a name of numeric', function() {
-    expect(Numeric, 'to have property', 'name', 'numeric');
+  it('should have a cssName of numeric', function() {
+    expect(Numeric, 'to have property', 'cssName', 'numeric');
   });
 
   it('should wrap around and interpret the symbols as digits', function() {

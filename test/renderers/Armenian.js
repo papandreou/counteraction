@@ -2,8 +2,8 @@ const Armenian = require('../../lib/renderers/Armenian');
 const expect = require('unexpected');
 
 describe('Armenian', function() {
-  it('should have a name of armenian', function() {
-    expect(Armenian, 'to have property', 'name', 'armenian');
+  it('should have a cssName of armenian', function() {
+    expect(Armenian, 'to have property', 'cssName', 'armenian');
   });
 
   it('should render a small number', function() {

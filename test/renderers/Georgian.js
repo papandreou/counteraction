@@ -2,8 +2,8 @@ const Georgian = require('../../lib/renderers/Georgian');
 const expect = require('unexpected');
 
 describe('Georgian', function() {
-  it('should have a name of georgian', function() {
-    expect(Georgian, 'to have property', 'name', 'georgian');
+  it('should have a cssName of georgian', function() {
+    expect(Georgian, 'to have property', 'cssName', 'georgian');
   });
 
   it('should render a small number', function() {

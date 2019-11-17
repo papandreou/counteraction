@@ -2,8 +2,8 @@ const Decimal = require('../../lib/renderers/Decimal');
 const expect = require('unexpected');
 
 describe('Decimal', function() {
-  it('should have a name of decimal', function() {
-    expect(Decimal, 'to have property', 'name', 'decimal');
+  it('should have a cssName of decimal', function() {
+    expect(Decimal, 'to have property', 'cssName', 'decimal');
   });
 
   it('should render a small number', function() {

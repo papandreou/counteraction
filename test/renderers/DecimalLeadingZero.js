@@ -2,11 +2,11 @@ const DecimalLeadingZero = require('../../lib/renderers/DecimalLeadingZero');
 const expect = require('unexpected');
 
 describe('DecimalLeadingZero', function() {
-  it('should have a name of decimal-leading-zero', function() {
+  it('should have a cssName of decimal-leading-zero', function() {
     expect(
       DecimalLeadingZero,
       'to have property',
-      'name',
+      'cssName',
       'decimal-leading-zero'
     );
   });

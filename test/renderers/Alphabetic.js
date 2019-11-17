@@ -2,8 +2,8 @@ const Alphabetic = require('../../lib/renderers/Alphabetic');
 const expect = require('unexpected');
 
 describe('Alphabetic', function() {
-  it('should have a name of alphabetic', function() {
-    expect(Alphabetic, 'to have property', 'name', 'alphabetic');
+  it('should have a cssName of alphabetic', function() {
+    expect(Alphabetic, 'to have property', 'cssName', 'alphabetic');
   });
 
   it('should wrap around and interpret the symbols as digits', function() {
