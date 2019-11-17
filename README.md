@@ -82,3 +82,5 @@ const renderer = counteraction('fixed', {
 console.log(renderer.render(3)); // Z
 console.log(renderer.render(4)); // •
 ```
+
+The `fallback` option can also be passed as another renderer instance, or "lazily" as a function that returns either a `list-style-type` name or a renderer.
