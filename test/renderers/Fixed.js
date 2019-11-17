@@ -21,10 +21,7 @@ describe('Fixed', function() {
       const fixed = new Fixed({
         system: 'fixed',
         symbols: 'A B C D',
-        fallback: 'foo',
-        renderers: {
-          foo: new Fixed({ symbols: 'Ⓐ Ⓑ Ⓒ Ⓓ Ⓔ Ⓕ' })
-        }
+        fallback: new Fixed({ symbols: 'Ⓐ Ⓑ Ⓒ Ⓓ Ⓔ Ⓕ' })
       });
       expect(fixed.render(1), 'to equal', 'A');
       expect(fixed.render(3), 'to equal', 'C');
