@@ -1,0 +1,55 @@
+{
+  "name": "counteraction",
+  "version": "1.0.0",
+  "description": "Compute CSS list-style-type and @counter-style values",
+  "main": "lib/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^6.0.0",
+    "eslint-config-prettier": "^5.0.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.17.3",
+    "eslint-plugin-mocha": "^5.3.0",
+    "eslint-plugin-node": "^9.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "mocha": "^6.0.0",
+    "nyc": "^14.0.0",
+    "prettier": "^1.14.3",
+    "unexpected": "^11.0.0"
+  },
+  "scripts": {
+    "lint": "eslint . && prettier --check '**/*.js'",
+    "test": "mocha",
+    "ci": "npm test && npm run lint && npm run coverage",
+    "coverage": "NODE_ENV=development nyc --reporter=lcov --reporter=text --all -- npm test && echo google-chrome coverage/lcov-report/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/assetgraph/assetgraph-webpack.git"
+  },
+  "keywords": [
+    "css",
+    "count",
+    "counter",
+    "counter-style",
+    "symbols",
+    "list-style",
+    "list",
+    "cyclic",
+    "hebrew",
+    "armenian",
+    "georgian",
+    "roman"
+  ],
+  "author": "Andreas Lind <andreaslindpetersen@gmail.com>",
+  "license": "BSD-3-Clause",
+  "nyc": {
+    "include": [
+      "lib/**"
+    ]
+  }
+}
