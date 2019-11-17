@@ -7,6 +7,16 @@ describe('index', function() {
     expect(renderer.render(12), 'to equal', 'xii');
   });
 
+  it('should return undefined if an unknown name is passed', function() {
+    const renderer = counteraction('foo');
+    expect(renderer, 'to be undefined');
+  });
+
+  it('should return undefined if undefined is passed as the name', function() {
+    const renderer = counteraction(undefined);
+    expect(renderer, 'to be undefined');
+  });
+
   it('should create a @counter-style renderer by an options object', function() {
     const renderer = counteraction({
       system: 'fixed',
