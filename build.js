@@ -13,7 +13,9 @@ const rbnfNameByCssName = {
   'upper-roman': 'renderRomanUpper',
   'lower-roman': 'renderRomanLower',
   armenian: 'renderArmenianLower',
-  hebrew: 'renderHebrew'
+  hebrew: 'renderHebrew',
+  ethiopic: 'renderEthiopic',
+  tamil: 'renderTamil'
 };
 
 for (const [cssName, rbnfName] of Object.entries(rbnfNameByCssName)) {
