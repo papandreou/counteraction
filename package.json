@@ -8,6 +8,7 @@
   },
   "dependencies": {},
   "devDependencies": {
+    "cldr": "^5.5.3",
     "coveralls": "^3.0.7",
     "eslint": "^6.0.0",
     "eslint-config-prettier": "^5.0.0",
