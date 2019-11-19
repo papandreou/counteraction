@@ -7,14 +7,14 @@ describe('LowerGreek', function() {
   });
 
   it('should render a small number', function() {
-    expect(new LowerGreek().render(12), 'to equal', 'ιβ´');
+    expect(new LowerGreek().render(12), 'to equal', 'ιβ');
   });
 
   it('should render a big number', function() {
-    expect(new LowerGreek().render(123456), 'to equal', 'ιβμ ͵γυνϝ´');
+    expect(new LowerGreek().render(123456), 'to equal', 'ιβμ ͵γυνϝ');
   });
 
   it('should render a negative number', function() {
-    expect(new LowerGreek().render(-12), 'to equal', '−ιβ´');
+    expect(new LowerGreek().render(-12), 'to equal', '𐆊');
   });
 });
