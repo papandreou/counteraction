@@ -8,6 +8,7 @@ const { CLIEngine, Linter } = require('eslint');
 
 const rbnfNameByCssName = {
   'lower-greek': 'renderGreekNumeralMinuscules',
+  'upper-greek': 'renderGreekNumeralMajuscules',
   georgian: 'renderGeorgian',
   'upper-roman': 'renderRomanUpper',
   'lower-roman': 'renderRomanLower',
