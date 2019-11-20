@@ -21,18 +21,21 @@ npm install counteraction
 
 Simple `list-style-type` renderers (option-less):
 
-- `lower-roman`
-- `upper-alpha`
-- `upper-roman`
-- `lower-alpha`
-- `georgian`
-- `decimal`
-- `hebrew`
-- `lower-latin`
 - `armenian`
+- `decimal`
 - `decimal-leading-zero`
-- `upper-latin`
+- `ethiopic`
+- `georgian`
+- `hebrew`
+- `lower-alpha`
 - `lower-greek`
+- `lower-latin`
+- `lower-roman`
+- `tamil`
+- `upper-alpha`
+- `upper-greek`
+- `upper-latin`
+- `upper-roman`
 
 These bogus ones are there for completeness:
 
