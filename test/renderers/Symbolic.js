@@ -1,12 +1,12 @@
 const Symbolic = require('../../lib/renderers/Symbolic');
 const expect = require('unexpected');
 
-describe('Symbolic', function() {
-  it('should have a cssName of symbolic', function() {
+describe('Symbolic', function () {
+  it('should have a cssName of symbolic', function () {
     expect(Symbolic, 'to have property', 'cssName', 'symbolic');
   });
 
-  it('should wrap around and duplicate the symbols one more time after each wrap', function() {
+  it('should wrap around and duplicate the symbols one more time after each wrap', function () {
     const symbolic = new Symbolic({ symbols: 'A B' });
 
     expect(symbolic.render(1), 'to equal', 'A');
@@ -16,7 +16,7 @@ describe('Symbolic', function() {
     expect(symbolic.render(5), 'to equal', 'AAA');
   });
 
-  it('should fall back', function() {
+  it('should fall back', function () {
     const symbolic = new Symbolic({ symbols: 'A B' });
 
     expect(symbolic.render(-1), 'to equal', '-1');

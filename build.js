@@ -15,13 +15,13 @@ const rbnfNameByCssName = {
   armenian: 'renderArmenianLower',
   hebrew: 'renderHebrew',
   ethiopic: 'renderEthiopic',
-  tamil: 'renderTamil'
+  tamil: 'renderTamil',
 };
 
 for (const [cssName, rbnfName] of Object.entries(rbnfNameByCssName)) {
   const renderers = cldr.extractRbnfFunctionByType('root', rbnfName);
 
-  const className = _.camelCase(cssName).replace(/^[a-z]/, $0 =>
+  const className = _.camelCase(cssName).replace(/^[a-z]/, ($0) =>
     $0.toUpperCase()
   );
 

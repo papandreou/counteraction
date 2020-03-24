@@ -1,20 +1,20 @@
 const Georgian = require('../../lib/renderers/Georgian');
 const expect = require('unexpected');
 
-describe('Georgian', function() {
-  it('should have a cssName of georgian', function() {
+describe('Georgian', function () {
+  it('should have a cssName of georgian', function () {
     expect(Georgian, 'to have property', 'cssName', 'georgian');
   });
 
-  it('should render a small number', function() {
+  it('should render a small number', function () {
     expect(new Georgian().render(12), 'to equal', 'იბ');
   });
 
-  it('should render a big number', function() {
+  it('should render a big number', function () {
     expect(new Georgian().render(1234), 'to equal', 'შსლდ');
   });
 
-  it('should render a negative number', function() {
+  it('should render a negative number', function () {
     expect(new Georgian().render(-12), 'to equal', '−იბ');
   });
 });

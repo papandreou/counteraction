@@ -1,12 +1,12 @@
 const Cyclic = require('../../lib/renderers/Cyclic');
 const expect = require('unexpected');
 
-describe('Cyclic', function() {
-  it('should have a cssName of cyclic', function() {
+describe('Cyclic', function () {
+  it('should have a cssName of cyclic', function () {
     expect(Cyclic, 'to have property', 'cssName', 'cyclic');
   });
 
-  it('should wrap around', function() {
+  it('should wrap around', function () {
     const cyclic = new Cyclic({ symbols: 'A B C D' });
 
     expect(cyclic.render(1), 'to equal', 'A');
@@ -14,7 +14,7 @@ describe('Cyclic', function() {
     expect(cyclic.render(5), 'to equal', 'A');
   });
 
-  it('should fall back', function() {
+  it('should fall back', function () {
     const cyclic = new Cyclic({ symbols: 'A B' });
 
     expect(cyclic.render(-1), 'to equal', '-1');

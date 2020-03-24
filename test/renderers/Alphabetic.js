@@ -1,12 +1,12 @@
 const Alphabetic = require('../../lib/renderers/Alphabetic');
 const expect = require('unexpected');
 
-describe('Alphabetic', function() {
-  it('should have a cssName of alphabetic', function() {
+describe('Alphabetic', function () {
+  it('should have a cssName of alphabetic', function () {
     expect(Alphabetic, 'to have property', 'cssName', 'alphabetic');
   });
 
-  it('should wrap around and interpret the symbols as digits', function() {
+  it('should wrap around and interpret the symbols as digits', function () {
     const alphabetic = new Alphabetic({ symbols: 'A B' });
 
     expect(alphabetic.render(1), 'to equal', 'A');
@@ -16,18 +16,18 @@ describe('Alphabetic', function() {
     expect(alphabetic.render(5), 'to equal', 'BA');
   });
 
-  it('should fall back', function() {
+  it('should fall back', function () {
     const alphabetic = new Alphabetic({ symbols: 'A B' });
 
     expect(alphabetic.render(-1), 'to equal', '-1');
     expect(alphabetic.render(0), 'to equal', '0');
   });
 
-  describe('with a range', function() {
-    it('should fall back when rendering values outside of the range', function() {
+  describe('with a range', function () {
+    it('should fall back when rendering values outside of the range', function () {
       const alphabetic = new Alphabetic({
         symbols: 'A B C D E F G H I J K L',
-        range: '1 2, 4 5, 7 infinite'
+        range: '1 2, 4 5, 7 infinite',
       });
 
       expect(alphabetic.render(1), 'to equal', 'A');
