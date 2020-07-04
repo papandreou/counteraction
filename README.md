@@ -82,6 +82,7 @@ const renderer = counteraction({
   system: 'alphabetic',
   symbols: ['X', 'Y', 'Z'],
 });
+console.log(renderer.render(123)); // XXXXZ
 ```
 
 They also support a `fallback` option to be used when the value is out of range.
