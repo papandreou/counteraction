@@ -68,7 +68,7 @@ declaration:
 
 ```js
 const renderer = counteraction('alphabetic', {
-  symbols: ['X', 'Y', 'Z']
+  symbols: ['X', 'Y', 'Z'],
 });
 console.log(renderer.render(123)); // XXXXZ
 ```
@@ -80,7 +80,7 @@ of the whole `@counter-style` declaration:
 ```js
 const renderer = counteraction({
   system: 'alphabetic',
-  symbols: ['X', 'Y', 'Z']
+  symbols: ['X', 'Y', 'Z'],
 });
 ```
 
@@ -91,7 +91,7 @@ It can be passed as either a renderer instance or the name of a
 ```js
 const renderer = counteraction('fixed', {
   symbols: ['X', 'Y', 'Z'],
-  fallback: 'disc'
+  fallback: 'disc',
 });
 console.log(renderer.render(3)); // Z
 console.log(renderer.render(4)); // •
