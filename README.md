@@ -62,6 +62,10 @@ const renderer = counteraction('lower-roman');
 console.log(renderer.render(123)); // cxxiii
 ```
 
+```output
+cxxiii
+```
+
 The `@counter-system` ones are created by their `system` name and accept an
 options object that corresponds to the CSS properties of the `@counter-style`
 declaration:
@@ -71,6 +75,10 @@ const renderer = counteraction('alphabetic', {
   symbols: ['X', 'Y', 'Z'],
 });
 console.log(renderer.render(123)); // XXXXZ
+```
+
+```output
+cxxiii
 ```
 
 The name (system) can also be passed as a separate property instead of the name
@@ -85,6 +93,10 @@ const renderer = counteraction({
 console.log(renderer.render(123)); // XXXXZ
 ```
 
+```output
+XXXXZ
+```
+
 They also support a `fallback` option to be used when the value is out of range.
 It can be passed as either a renderer instance or the name of a
 `list-style-type` renderer:
@@ -96,6 +108,11 @@ const renderer = counteraction('fixed', {
 });
 console.log(renderer.render(3)); // Z
 console.log(renderer.render(4)); // •
+```
+
+```output
+Z
+•
 ```
 
 The `fallback` option can also be passed as another renderer instance, or "lazily" as a function that returns either a `list-style-type` name or a renderer.
