@@ -94,7 +94,7 @@ console.log(renderer.render(123)); // XXXXZ
 ```
 
 ```output
-XXXXZ
+XXXXZZvqeiojqvwioejvqwe
 ```
 
 They also support a `fallback` option to be used when the value is out of range.
