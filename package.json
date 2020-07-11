@@ -28,7 +28,7 @@
   "scripts": {
     "lint": "eslint . && prettier --check '**/*.js'",
     "test": "mocha",
-    "test:documentation": "evaldown --output-capture=console README.md >/dev/null",
+    "test:documentation": "evaldown --validate --capture=console README.md",
     "test:ci": "npm run coverage && npm run test:documentation",
     "coverage": "NODE_ENV=development nyc --reporter=lcov --reporter=text --all -- npm test && echo google-chrome coverage/lcov-report/index.html"
   },
