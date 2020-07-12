@@ -19,7 +19,7 @@
     "eslint-plugin-node": "^11.0.0",
     "eslint-plugin-promise": "^4.0.1",
     "eslint-plugin-standard": "^4.0.0",
-    "evaldown": "^1.0.1",
+    "evaldown": "^1.1.0",
     "mocha": "^8.0.1",
     "nyc": "^15.0.0",
     "prettier": "~2.0.1",
@@ -28,7 +28,7 @@
   "scripts": {
     "lint": "eslint . && prettier --check '**/*.js'",
     "test": "mocha",
-    "test:documentation": "evaldown --output-capture=console README.md >/dev/null",
+    "test:documentation": "evaldown --validate --capture=console README.md",
     "test:ci": "npm run coverage && npm run test:documentation",
     "coverage": "NODE_ENV=development nyc --reporter=lcov --reporter=text --all -- npm test && echo google-chrome coverage/lcov-report/index.html"
   },
