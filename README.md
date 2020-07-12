@@ -63,7 +63,7 @@ console.log(renderer.render(123)); // cxxiii
 ```
 
 ```output
-cxxiii
+'cxxiii'
 ```
 
 The `@counter-system` ones are created by their `system` name and accept an
@@ -78,7 +78,7 @@ console.log(renderer.render(123)); // XXXXZ
 ```
 
 ```output
-cxxiii
+'XXXXZ'
 ```
 
 The name (system) can also be passed as a separate property instead of the name
@@ -94,7 +94,7 @@ console.log(renderer.render(123)); // XXXXZ
 ```
 
 ```output
-XXXXZ
+'XXXXZ'
 ```
 
 They also support a `fallback` option to be used when the value is out of range.
@@ -111,8 +111,8 @@ console.log(renderer.render(4)); // •
 ```
 
 ```output
-Z
-•
+'Z'
+'•'
 ```
 
 The `fallback` option can also be passed as another renderer instance, or "lazily" as a function that returns either a `list-style-type` name or a renderer.
