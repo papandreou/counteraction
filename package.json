@@ -26,7 +26,7 @@
     "unexpected": "^11.0.0"
   },
   "scripts": {
-    "lint": "eslint . && prettier --check '**/*.js'",
+    "lint": "eslint . && prettier --check '**/*.{js,json,md}'",
     "test": "mocha",
     "test:documentation": "evaldown --validate --capture=console README.md",
     "test:ci": "npm run coverage && npm run test:documentation",
