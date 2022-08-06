@@ -35,7 +35,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/assetgraph/assetgraph-webpack.git"
+    "url": "git://github.com/papandreou/counteraction.git"
   },
   "keywords": [
     "css",
